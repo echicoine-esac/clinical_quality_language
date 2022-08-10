@@ -11,7 +11,7 @@ define ContainsTimeTrue: { @T15:59:59.999, @T05:59:59.999, @T20:59:59.999 } cont
 define ContainsTimeFalse: { @T15:59:59.999, @T05:59:59.999, @T20:59:59.999 } contains @T08:59:59.999
 
 //Distinct
-define DistinctEmptyList: distinct {}
+define DistinctEmptyList: distinct {}``
 define DistinctNullNullNull: distinct { null, null, null}
 define DistinctANullANull: distinct { 'a', null, 'a', null}
 define Distinct112233: distinct { 1, 1, 2, 2, 3, 3}

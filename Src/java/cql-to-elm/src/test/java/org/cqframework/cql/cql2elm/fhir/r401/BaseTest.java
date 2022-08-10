@@ -56,6 +56,12 @@ public class BaseTest {
     }
 
     @Test
+    public void testToToday() throws IOException {
+        // If this translates without errors, the test is successful
+        ExpressionDef def = (ExpressionDef) visitFile("fhir/r401/Issue6545.cql");
+    }
+
+    @Test
     public void testFHIRTiming() throws IOException {
         ExpressionDef def = (ExpressionDef) visitFile("fhir/r401/TestFHIRTiming.cql");
         // Query->
@@ -89,6 +95,9 @@ public class BaseTest {
         assertThat(property.getScope(), is("P"));
         assertThat(property.getPath(), is("performed"));
     }
+
+
+
 
     @Test
     public void testEqualityWithConversions() throws IOException {
